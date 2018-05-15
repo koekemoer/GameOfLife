@@ -35,8 +35,8 @@ namespace GameOfLife
             Console.WriteLine();
             Console.Write("Alive Cells: " + aliveCells);
             Console.WriteLine();
-            Console.WriteLine("WINDOW WIDTH: " + (Console.WindowWidth - 1));
-            Console.WriteLine("WINDOW HEIGHT: " + (Console.WindowHeight - 4));
+            //Console.WriteLine("WINDOW WIDTH: " + (Console.WindowWidth - 1));
+            //Console.WriteLine("WINDOW HEIGHT: " + (Console.WindowHeight - 4));
         }
 
         public bool[,] seedBoard(bool[,] board)
@@ -264,8 +264,8 @@ namespace GameOfLife
         static void Main(string[] args)
         {
             Program sim = new Program();
-            sim.seedBoard(sim.board);
-            //sim.spawnPresets();
+            //sim.seedBoard(sim.board);
+            sim.spawnPresets();
             sim.printBoard(sim.board);
             Console.CursorVisible = false;
 
